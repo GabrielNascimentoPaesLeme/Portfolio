@@ -1,0 +1,154 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(10, 11, 31, 0.753),
+      rgb(0, 2, 19)
+    ),
+    url('../assets/img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px 30px 0px;
+  color: white;
+  z-index: 4;
+}
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(31, 31, 40, 0.575);
+  z-index: 3;
+}
+
+.contents {
+  background-image: linear-gradient(
+      rgba(209, 209, 228, 0.349),
+      rgba(209, 209, 228, 0.2)
+    ),
+    url('../assets/img/bg.jpg');
+  background-size: cover;
+  background-position: 60% 30%;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.contents .container{
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  z-index: 4;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.text-apresentation {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+}
+
+.text-apresentation h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.text-apresentation h3{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.text-apresentation p{
+  font-size: .9rem;
+  margin-bottom: 0;
+}
+
+.content-text button {
+  width: 50%;
+  align-self: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.code-content {
+  display: none;
+  font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada */
+  white-space: pre; /* Mantém os espaços e quebras de linha */
+  padding: 10px; /* Espacamento interno */
+  margin-top: 13%;
+  font-size: 1rem;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+  z-index: 4;
+}
+
+.text-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text-info h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgb(216, 132, 52);
+  margin-bottom: 0;
+}
+
+.text-info p {
+  color: #f8f8f2;
+  font-size: .9rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 375px) {
+  .info{
+    margin-top: 15px;
+    justify-content: space-evenly;
+  }
+
+  .content-text{
+    gap: 30px;
+  }
+
+  .text-info{
+    max-width: 50%;
+  }
+
+  .content-text button{
+    margin-bottom: 20px;
+  }
+
+  .text-info h3{
+    font-size: 1.7rem;
+  }
+
+  .text-info p{
+    font-size: 1rem;
+  }
+}
