@@ -1,6 +1,6 @@
 .form-contact {
   background-color: #090b1afd;
-  height: 100vh;
+  padding-bottom: 10px;
 }
 
 .form-contact h2 {
@@ -95,19 +95,39 @@
   }
 
   .formControl.email{
-    width: 55%;
+    width: 60%;
+  }
+
+  .remetente{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .remetente div{
+    width: 45%;
+  }
+
+  .remetente div.email-remetente{
+    width: 100%;
   }
 
   .netWorkCurriculo{
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
   }
 
   .formControl.curriculo{
-    display: inline;
-    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+
+  .formControl.netWork{
+    height: 50%;
   }
 
   .curriculo h3{
