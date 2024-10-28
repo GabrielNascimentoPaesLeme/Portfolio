@@ -1,6 +1,15 @@
+.nav{
+  background-color: #0b0e1d;
+  width: 100%;
+  height: 45px;
+  border: .5px solid rgba(255, 255, 255, 0.082);
+  position: fixed;
+  z-index: 99;
+}
+
 .hero {
   background-image: linear-gradient(
-      rgba(10, 11, 31, 0.753),
+      rgba(10, 11, 31, 0.562),
       rgb(0, 2, 19)
     ),
     url('../assets/img/bg.jpg');
@@ -27,7 +36,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(31, 31, 40, 0.575);
+  background-color: rgba(31, 31, 40, 0.829);
   z-index: 3;
 }
 
@@ -67,18 +76,19 @@
 
 .text-apresentation h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .text-apresentation h3{
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .text-apresentation p{
-  font-size: .9rem;
+  font-size: .70rem;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .content-text button {
@@ -150,5 +160,113 @@
 
   .text-info p{
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .content-image{
+    width: 50%;
+  }
+
+  .content-text{
+    width: 50%;
+  }
+
+  .text-apresentation p{
+    font-size: 0.8rem;
+  }
+
+  .code-content{
+    display: flex;
+    margin-top: 10px;
+    align-self: start;
+    gap: 0;
+    padding-top: 0;
+  }
+
+  .contents .container{
+    justify-content: space-evenly;
+  }  
+}
+
+@media screen and (min-width: 1020px){
+  .contents{
+    height: 70vh;
+  }
+
+  .contents .container{
+    height: 100%;
+  }
+
+  .content-text{
+    gap: 0;
+  }
+
+  .text-apresentation p{
+    font-size: .8rem;
+  }
+
+  .text-apresentation{
+    padding-top: 0;
+  }
+
+  .text-apresentation div h2{
+    font-size: 1.5rem;
+  }
+
+  .text-apresentation div h3{
+    font-size: 1.2rem;
+  }
+
+  .content-text button{
+    font-size: .9rem;
+    margin-bottom: 0;
+    margin-left: 10px;
+    align-self: start;
+  }
+
+  .text-info h3{
+    font-size: 1.8rem;
+  }
+
+  .text-info p{
+    font-size: 1.3rem;
+  }
+
+  .faixa-nav{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 1279px){
+  .contents{
+    height: 85%;
+  }
+
+  .text-apresentation div h2{
+    font-size: 2rem;
+  }
+
+  .text-apresentation div h3{
+    font-size: 1.5rem;
+  }
+
+  .text-apresentation p{
+    font-size: 1rem;
+    
+  }
+
+  .content-text button{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 10px;
+    align-self: start;
+  }
+
+  code{
+    font-size: 1.1rem;
+    margin-top: 30px;
   }
 }

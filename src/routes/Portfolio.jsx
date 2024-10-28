@@ -43,7 +43,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="portfolio-container">
+    <div id='portfolio' className="portfolio-container">
       <h2 className="title-portfolio">Alguns Projetos</h2>
       <div className="content-cards">
         {projects.map((project, index) => {

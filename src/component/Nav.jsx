@@ -6,11 +6,11 @@ import Typed from 'typed.js';
 const Nav = () => {
   const typedRef = useRef(null);
   const [headerToggle, setHeaderToggle] = useState(true);
-  const [stateBurger, setStateBurger] = useState('bi-three-dots-vertical');
+  const [stateBurger, setStateBurger] = useState('bi-three-dots');
 
   const getToggle = () => {
     if (headerToggle) {
-      if (stateBurger === 'bi-three-dots-vertical') {
+      if (stateBurger === 'bi-three-dots') {
         setHeaderToggle(false);
         setStateBurger('bi-x');
         console.log(stateBurger);
@@ -20,7 +20,7 @@ const Nav = () => {
       console.log(stateBurger);
       console.log(headerToggle);
       setHeaderToggle(true);
-      setStateBurger('bi-three-dots-vertical');
+      setStateBurger('bi-three-dots');
     }
   };
 
@@ -87,11 +87,11 @@ const Nav = () => {
             </p>
 
             <p className="flex-link">
-              <a href="#">Portfólio</a>
+              <a href="#portfolio">Portfólio</a>
             </p>
 
             <p className="contact">
-              <a href="#">Contato</a>
+              <a href="#contato">Contato</a>
             </p>
 
           </div>
@@ -223,17 +223,17 @@ const Nav = () => {
 
           <div className="check-skills">
             <div className="skill">
-              <i class="bi bi-check"></i>
+              <i className="bi bi-check"></i>
               <p>Bootstrap, Material UI</p>
             </div>
 
             <div className="skill">
-              <i class="bi bi-check"></i>
+              <i className="bi bi-check"></i>
               <p>Requisições HTTP, Axios, APIs</p>
             </div>
 
             <div className="skill">
-              <i class="bi bi-check"></i>
+              <i className="bi bi-check"></i>
               <p>Git, GitHub</p>
             </div>
           </div>

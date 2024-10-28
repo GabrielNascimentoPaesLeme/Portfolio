@@ -11,7 +11,7 @@ const Resume = () => {
         `function rocketLaunch() {
   let countdown = 5;
   const interval = setInterval(() => {
-    if (countdown > 0) {
+    if (countdown >= 0) {
       console.log(countdown);
       countdown--;
     } else {
@@ -53,6 +53,9 @@ rocketLaunch();
 
   return (
     <div>
+      <nav className="nav faixa-nav">
+        
+      </nav>
       <section id="hero" className="hero section dark-background">
         <div className="contents">
           <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -63,13 +66,7 @@ rocketLaunch();
                   <h3>Desenvolvedor Front-end</h3>
                 </div>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Necessitatibus perferendis consequuntur dicta harum accusamus
-                  quisquam quis optio natus non, deserunt, voluptatum officiis
-                  corrupti magnam fugiat reiciendis tempora! Excepturi, vel
-                  explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing
-                  elit. Vero excepturi eaque fugiat cum nihil adipisci officia
-                  necessitatibus..
+                Desenvolvedor front-end com sólida experiência em React e Vite, com grande capacidade de adaptação e aprendizado contínuo em projetos complexos. Possuo forte compreensão no desenvolvimento de interfaces e uma atenção cuidadosa aos detalhes, aplicando conceitos de usabilidade e design responsivo de maneira consistente. Já trabalhei com frameworks como Flask e Node.js, construindo APIs REST e integrando-as com front-ends robustos, além de experiência com gerenciadores de estado e integração de bibliotecas como Axios e Bootstrap.
                 </p>
               </div>
               <button>Saiba mais</button>

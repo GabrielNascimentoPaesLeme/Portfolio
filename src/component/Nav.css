@@ -7,7 +7,7 @@
   width: 100vw;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -105%;
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
@@ -21,10 +21,10 @@
 
 .header .burger {
   color: var(--contrast-color);
-  font-size: 22px;
+  font-size: 1.5rem;
   cursor: pointer;
   position: fixed;
-  top: 15px;
+  top: 5px;
   left: 15px;
   z-index: 9999;
   transition: background-color 0.3s;
@@ -159,4 +159,37 @@
 
 .social-links a i {
   color: var(--heading-color);
+}
+
+@media screen and (min-width: 1020px){
+  .header{
+    width: 30vw;
+    left: 0;
+  }
+
+  .linguages{
+    flex-direction: column;
+  }
+
+  .progress{
+    width: auto;
+  }
+
+  .links-nav a{
+    font-size: 1rem;
+  }
+
+  .burger{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1279px){
+  .links-nav a{
+    font-size: 1.3rem;
+  }
+
+  .progress-content h5{
+    font-size: 1.8rem;
+  }
 }

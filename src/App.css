@@ -42,8 +42,11 @@
   --contrast-color: #ffffff;
 }
 
-
-
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--default-color) #030318e7;
+}
 
 .container-app::before {
   content: '';
@@ -52,12 +55,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(
-    31,
-    31,
-    40,
-    0.63
-  ); 
+  background-color: rgba(31, 31, 40, 0.63);
   z-index: 2;
 }
 
+@media screen and (min-width: 1020px) {
+  .main-section {
+    width: 70vw;
+    margin-left: calc(100vw - 70vw);
+    overflow-x: hidden;
+  }
+}

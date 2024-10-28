@@ -7,7 +7,8 @@
   text-align: center;
   padding-top: 10px;
   font-size: 2rem;
-  color: rgba(255, 255, 255, 0.61);
+  color: rgba(255, 255, 255, 0.808);
+  font-weight: 700;
 }
 
 .formControl {
@@ -23,6 +24,10 @@
   margin: 0 auto;
   margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.61);
+}
+
+.formControl.curriculo{
+  display: none;
 }
 
 .contact-form{
@@ -64,4 +69,88 @@
 
 .contacts h3{
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 767px) {
+  .form-contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    justify-content: space-evenly;
+  }
+
+  .forms{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+  .contacts h3{
+    font-size: calc(1.2rem + .6vw);
+  }
+
+  .formControl{
+    margin: 0;
+  }
+
+  .formControl.email{
+    width: 55%;
+  }
+
+  .netWorkCurriculo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .formControl.curriculo{
+    display: inline;
+    height: 40%;
+  }
+
+  .curriculo h3{
+    margin-bottom: 5px;
+  }
+
+  .curriculo p{
+    font-size: .8rem;
+  }
+
+  .contact-form{
+    flex-direction: column;
+  }
+
+  .contact-icons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .pdf{
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    border-radius: 50px;
+    width: 70%;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+
+  .linkPdf{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1279px){
+  .form-contact{
+    justify-content: center;
+    gap: 50px;
+  }  
+
+  .form-contact h2{
+    font-size: 2.5rem;
+  }
 }

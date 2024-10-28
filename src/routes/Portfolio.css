@@ -93,3 +93,19 @@
 .card.flipped .back {
   backface-visibility: visible; /* Mostra o verso quando está virado */
 }
+
+@media screen and (min-width: 760px){
+  .content-cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card{
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1020px){
+  
+}
