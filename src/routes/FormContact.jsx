@@ -50,7 +50,7 @@ const FormContact = () => {
               <h3>Redes Sociais</h3>
               <div className="contact-form">
                 <a
-                  href="https://wa.me/5531995780478?text=Ol%C3%A1%2C%20digite%20sua%20mensagem%20que%20eu%20j%C3%A1%20respondo%21!"
+                  href={`https://wa.me/${import.meta.env.VITE_WPP_NUM}?text=Ol%C3%A1%2C%20digite%20sua%20mensagem%20que%20eu%20j%C3%A1%20respondo%21!`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="wpp contact-icons"
