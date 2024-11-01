@@ -98,6 +98,25 @@
   margin-bottom: 5px;
 }
 
+.modal-content{
+  height: 90vh;
+  background-color: #0b0e1d;
+  color: #f8f8f2;
+}
+
+.modal-header{
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.164);
+  
+}
+
+.modal-header .modal-title{
+  text-align: center;
+}
+
+.modal-footer{
+  border-top: 0.1px solid rgba(255, 255, 255, 0.164);
+}
+
 .code-content {
   display: none;
   font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada */
@@ -133,6 +152,10 @@
   font-size: .9rem;
   font-weight: 700;
   margin-bottom: 0;
+}
+
+.modal-header .btn-close{
+  background-color: #f8f8f2;
 }
 
 
@@ -187,6 +210,10 @@
   .contents .container{
     justify-content: space-evenly;
   }  
+
+  .modal-content{
+    height: 80vh;
+  }
 }
 
 @media screen and (min-width: 1020px){
