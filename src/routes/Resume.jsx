@@ -67,10 +67,10 @@ rocketLaunch();
               <div className="text-apresentation">
                 <div>
                   <h2>Gabriel Paes Leme</h2>
-                  <h3>Desenvolvedor Front-end</h3>
+                  <h3>Desenvolvedor Web</h3>
                 </div>
                 <p>
-                  Desenvolvedor front-end com sólida experiência em React e
+                  Desenvolvedor Web com sólida experiência em React e
                   Vite, com grande capacidade de adaptação e aprendizado
                   contínuo em projetos complexos. Possuo forte compreensão no
                   desenvolvimento de interfaces e uma atenção cuidadosa aos
