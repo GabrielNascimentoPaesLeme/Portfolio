@@ -77,7 +77,6 @@ const Nav = () => {
 
         <div className="scrollable-content">
           <div className="links-nav">
-
             <p className="flex-link">
               <a href="#">Resumo</a>
             </p>
@@ -93,7 +92,6 @@ const Nav = () => {
             <p className="contact">
               <a href="#contato">Contato</a>
             </p>
-
           </div>
 
           <div className="progress-content">
@@ -240,19 +238,25 @@ const Nav = () => {
         </div>
 
         <div className="social-links text-center">
-          <a href="#" className="twitter">
-            <i className="bi bi-twitter-x"></i>
+          <a
+            href={`https://wa.me/${import.meta.env.VITE_WPP_NUM}?text=Ol%C3%A1%2C%20digite%20sua%20mensagem%20que%20eu%20j%C3%A1%20respondo%21!`}
+            target="_blank"
+            className="instagram"
+          >
+            <i className="bi bi-whatsapp"></i>
           </a>
-          <a href="#" className="facebook">
-            <i className="bi bi-facebook"></i>
+          <a
+            href="https://github.com/GabrielNascimentoPaesLeme"
+            target="_blank"
+            className="google-plus"
+          >
+            <i className="bi bi-github"></i>
           </a>
-          <a href="#" className="instagram">
-            <i className="bi bi-instagram"></i>
-          </a>
-          <a href="#" className="google-plus">
-            <i className="bi bi-skype"></i>
-          </a>
-          <a href="#" className="linkedin">
+          <a
+            href="https://www.linkedin.com/in/gabriel-do-nascimento-paes-leme-aa0794233/"
+            target="_blank"
+            className="linkedin"
+          >
             <i className="bi bi-linkedin"></i>
           </a>
         </div>
