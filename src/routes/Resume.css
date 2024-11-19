@@ -50,7 +50,7 @@
   background-position: 60% 30%;
   padding: 5px;
   border-radius: 3px;
-  height: 85%;
+  min-height: 60%;
 }
 
 .contents .container{
