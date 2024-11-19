@@ -43,6 +43,10 @@
   flex-direction: row; /* Para permitir que a frente e o verso se alinhem */
 }
 
+.card-text{
+  font-size: .75rem;
+}
+
 .front,
 .back {
   width: 100%;
@@ -94,6 +98,15 @@
 
 .card.flipped .back {
   backface-visibility: visible; /* Mostra o verso quando está virado */
+}
+@media screen and (min-width: 420px){
+  .card-text{
+    font-size: .8rem;
+  }
+
+  .back a{
+    padding: 0px 10px;
+  }
 }
 
 @media screen and (min-width: 760px){
