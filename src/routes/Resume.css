@@ -56,6 +56,7 @@
 .contents .container{
   padding: 0;
   display: flex;
+  height: 100%;
   gap: 10px;
   position: relative;
   z-index: 4;
@@ -72,7 +73,7 @@
 .text-apresentation {
   display: flex;
   flex-direction: column;
-  padding: 5px 10px;
+  padding: 5px 0px;
 }
 
 .text-apresentation h2 {
@@ -87,7 +88,7 @@
 }
 
 .text-apresentation p{
-  font-size: .7rem;
+  font-size: .8rem;
   margin-bottom: 0;
   font-weight: 600;
 }
@@ -131,7 +132,7 @@
   position: relative;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 0px;
+  margin-bottom: 3px;
   z-index: 4;
 }
 
@@ -143,14 +144,14 @@
 
 .text-info h3 {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: rgb(216, 132, 52);
   margin-bottom: 0;
 }
 
 .text-info p {
   color: #f8f8f2;
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 700;
   margin-bottom: 0;
 }
