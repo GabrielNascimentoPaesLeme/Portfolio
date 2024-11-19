@@ -17,6 +17,7 @@
   background-position: center;
   overflow-x: hidden;
   height: 100vh;
+  max-height: 620px;
   width: 100%;
   display: flex;
   position: relative;
